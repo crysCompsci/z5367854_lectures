@@ -5,7 +5,7 @@ Utilities to download data from Yahoo Finance
 
 import yfinance as yf
 
-#from event_study import config as cfg
+from event_study import config as cfg
 #import config as cfg
 
 
@@ -72,12 +72,12 @@ def get_data(tic):
     print('Done')
 
     # Download and save recs
-    print(f'Downloading recs for {tic}...')
-    yf_rec_to_csv(tic, 
-            pth=locs['rec_csv'], 
-            start=cfg.START,
-            end=cfg.END)
-    print('Done')
+    #print(f'Downloading recs for {tic}...')
+    #yf_rec_to_csv(tic,
+    #        pth=locs['rec_csv'],
+    #        start=cfg.START,
+    #        end=cfg.END)
+    #print('Done')
 
 
 if __name__ == "__main__":
